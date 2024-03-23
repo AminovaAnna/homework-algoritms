@@ -4,50 +4,50 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        StringList list = new StringArrayList(5);
+        IntegerList list = new IntegerArrayList(5);
         System.out.println(list.isEmpty());
-        list.add("5");
-        list.add("1");
-        list.add("2");
-        list.add("3");
-        list.add("4");
-        list.add("5");
-        list.add("6");
+        list.add(Integer.valueOf("5"));
+        list.add(Integer.valueOf("1"));
+        list.add(Integer.valueOf("2"));
+        list.add(Integer.valueOf("3"));
+        list.add(Integer.valueOf("4"));
+        list.add(Integer.valueOf("5"));
+        list.add(Integer.valueOf("6"));
 
         System.out.println(list);
-        list.remove("3");
+        list.remove(Integer.valueOf("3"));
         System.out.println(list);
         list.remove(5);
         System.out.println(list);
-        list.remove("5");
+        list.remove(Integer.valueOf("5"));
         System.out.println(list);
-        list.remove("5");
-        System.out.println(list);
-
-        list.set(0,"99");
+        list.remove(Integer.valueOf("5"));
         System.out.println(list);
 
-        list.add(1, "100");
+        list.set(0, Integer.valueOf("99"));
         System.out.println(list);
-        list.add("99");
+
+        list.add(1, Integer.valueOf("100"));
+        System.out.println(list);
+        list.add(Integer.valueOf("99"));
         System.out.println(list);
         System.out.println(list.size());
 
 
-        System.out.println(list.contains("100"));
-        System.out.println(list.contains("10011"));
+        System.out.println(list.contains(Integer.valueOf("100")));
+        System.out.println(list.contains(Integer.valueOf("10011")));
 
 
-        System.out.println(list.indexOf("99"));
-        System.out.println(list.lastIndexOf("99"));
+        System.out.println(list.indexOf(Integer.valueOf("99")));
+        System.out.println(list.lastIndexOf(Integer.valueOf("99")));
         System.out.println(list.isEmpty());
 
-        StringList l2 = new StringArrayList(10);
-        l2.add("99");
-        l2.add("100");
-        l2.add("2");
-        l2.add("4");
-        l2.add("99");
+        IntegerList l2 = new IntegerArrayList(10);
+        l2.add(Integer.valueOf("99"));
+        l2.add(Integer.valueOf("100"));
+        l2.add(Integer.valueOf("2"));
+        l2.add(Integer.valueOf("4"));
+        l2.add(Integer.valueOf("99"));
      //   l2.add("99");
         System.out.println(' ');
         System.out.println(list.equals(l2));
@@ -58,8 +58,8 @@ public class Main {
 
  //       list.get(0);
 
-        list.add("0");
-        list.add(1,"1");
+        list.add(Integer.valueOf("0"));
+        list.add(1, Integer.valueOf("1"));
         System.out.println(list);
 
 
